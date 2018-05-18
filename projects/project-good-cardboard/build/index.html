@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Добрый картон</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header class="page-header">
+		<div class="page-header__wrapper">
+		
+			<div class="page-header__logo">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+					
+					<source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+					
+					<img class="page-header__logotype" src="img/logo-mobile.png" width="35" height="35" alt="Добрый картон">
+				</picture>
+			</div>
+			
+			<div class="page-header__contacts contacts">
+				<div class="contacts__wrapper-link">
+					<a class="contacts__link contacts__link--decorative-element" href="tel:8(347)2715428">
+						8 (347)<span>271 54 28</span>
+					</a>
+					<a class="contacts__link" href="tel:8(937)3633000">
+						8 (937) <span>363 30 00</span>
+					</a>	
+    			</div>
+    			
+    			<div class="contacts__wrapper-button">
+    				<a href="#" class="contacts__button  button  button-request-call">Заказать звонок</a>
+    			</div>
+			</div>
+			
+			<nav class="main-nav main-nav--closed main-nav--nojs">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#advantages" class="main-nav__link">
+								Нашы преимущества
+							</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#products" class="main-nav__link">
+								Наша продукция
+							</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#manufacture" class="main-nav__link">Производство</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#clients" class="main-nav__link">Наши клиенты</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="#contact-us" class="main-nav__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="page-main">
+	
+		<section class="supply">
+			<div class="supply__wrapper">
+				<div class="supply__image-wrapper">
+					<img src="img/box.png" alt="коробки" class="supply__img">
+				</div>
+				
+				<div class="supply__content-wrapper">
+					<h1 class="supply__title">Производство упаковки из гофрокартона<span>с доставкой по всей России</span></h1>
+
+					<div class="supply__form feedback">
+						<p class="feedback__intro">
+							Получите индивидуальное предложение на производство и поставку гофропродукции
+							<b>Образцы упаковки бесплатно!</b>
+						</p>
+						
+
+						<form  class="feedback__form" action="#" method="post">
+							<input class="feedback__field" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+							<button class="feedback__button button" type="submit">Оставить заявку!</button>
+						</form>
+
+						<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="advantages" id="advantages">
+			<div class="advantages__wrapper">
+				<div class="advantages__stats stats">
+					<ul class="stats__items">
+						<li class="stats__item">
+							<p class="stats__header">5 лет</p>
+							<p class="stats__text">На рынке изделий из гофрокартона</p>
+						</li>
+						
+						<li class="stats__item">
+							<p class="stats__header">до 5 000 000 м<sup>2</sup></p>
+							<p class="stats__text">Ежемесячный объем производства гофрокартона</p>
+						</li>
+						
+						<li class="stats__item">
+							<p class="stats__header">4 000 м<sup>2</sup></p>
+							<p class="stats__text">Площадь склада</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="advantages__triggers triggers">
+					<ul class="triggers__items">
+						<li class="triggers__item triggers__item--production">
+							<h3 class="triggers__title">Производство</h3>
+							<p class="triggers__description">4 технологические линии способны выполнить любой заказ любой сложности</p>
+						</li>
+						
+						<li class="triggers__item triggers__item--sample">
+							<h3 class="triggers__title">Бесплатные образцы</h3>
+							<p class="triggers__description">Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть свою</p>
+						</li>
+						
+						<li class="triggers__item triggers__item--quality">
+							<h3 class="triggers__title">Стабильное качество</h3>
+							<p class="triggers__description">Собственная лаборатория позволяет контролировать качество на каждом этапе</p>
+						</li>
+						
+						<li class="triggers__item triggers__item--reserve">
+							<h3 class="triggers__title">Страховой запас</h3>
+							<p class="triggers__description">Можем хранить запас гофропродукции на своих складах и поставлять его партиями</p>
+						</li>
+						
+						<li class="triggers__item triggers__item--flexo-printing">
+							<h3 class="triggers__title">Флексопечать</h3>
+							<p class="triggers__description">Возможно нанесение вашего  логотипа, текста или манипуляционных знаков</p>
+						</li>
+						
+						<li class="triggers__item triggers__item--hydrophobic-additives">
+							<h3 class="triggers__title">Гидрофобные добавки</h3>
+							<p class="triggers__description">На производстве реализована технология, которая позволяет гофрокартону стать прочнее</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="products" id="products">
+			<div class="products__wrapper">
+				<h2 class="products__title">Наша продукция</h2>
+				
+				<div class="products__categories">
+					<div class="products__item">
+						<div class="products__image-wrapper">
+							<a href="" class="products__image-link">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/product-corrugated-box-desktop.jpg">
+
+									<img class="products__image" src="img/product-corrugated-box-mobile.jpg" alt="Гофрокороб 4-х клапанный">
+								</picture>
+							</a>
+						</div>
+						
+						<div class="products__description">Гофрокороб 4-х клапанный </div>
+						
+						<div class="products__info">
+							<a href="" class="button products__button-info">Подробнее</a>
+							
+							<a href="" class="button products__button">Получить расчет</a>
+						</div>
+					</div>
+					
+					
+					<div class="products__item">
+						<div class="products__image-wrapper">
+							<a href="" class="products__image-link">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/product-corrugated-sheath-desktop.jpg">
+
+									<img class="products__image" src="img/product-corrugated-sheath-mobile.jpg" alt="Гофролоток">
+								</picture>
+							</a>
+						</div>
+						
+						<div class="products__description">Гофролоток</div>
+						
+						<div class="products__info">
+							<a href="" class="button products__button-info  products__button-info--item-two">Подробнее</a>
+							
+							<a href="" class="button products__button">Получить расчет</a>
+						</div>
+					</div>
+					
+					
+					<div class="products__item">
+						<div class="products__image-wrapper">
+							<a href="" class="products__image-link">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/product-corrugated-self-gathering-desktop.jpg">
+
+									<img class="products__image" src="img/product-corrugated-self-gathering-modile.jpg" alt="Гофрокороб самосборный (сложная высечка)">
+								</picture>
+							</a>
+						</div>
+						
+						<div class="products__description">Гофрокороб самосборный (сложная высечка)</div>
+						
+						<div class="products__info">
+							<a href="" class="button products__button-info products__button-info--item-three">Подробнее</a>
+							
+							<a href="" class="button products__button">Получить расчет</a>
+						</div>
+					</div>
+					
+					
+					<div class="products__item">
+						<div class="products__image-wrapper  products__image-wrapper--corrugated-cardboard">
+							<a href="" class="products__image-link">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/product-corrugated-cardboard-desktop.jpg">
+
+									<img class="products__image" src="img/product-corrugated-cardboard-mobile.jpg" alt="Листовой гофрокартон">
+								</picture>
+							</a>
+						</div>
+						
+						<div class="products__description">Листовой гофрокартон</div>
+						
+						<div class="products__info">
+							<a href="" class="button products__button-info products__button-info--item-four">Подробнее</a>
+							
+							<a href="" class="button products__button">Получить расчет</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="order-block">
+			<h2 class=".visually-hidden">Получите индивидуальное предложение на производство и поставку изделий</h2>
+			<div class="order-block__feedback feedback feedback--order">
+				<p class="feedback__intro">
+					Получите индивидуальное предложение
+					<span>на производство и поставку изделий</span> 
+				</p>
+				
+				<form  class="feedback__form" action="#" method="post">
+				
+					<label class="feedback__label" for="tel">Введите ваш номер телефона:</label>
+					<input class="feedback__field" id="tel" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+					<button class="feedback__button button" type="submit">Оставить заявку!</button>
+				</form>
+
+				<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+			</div>
+		</section>
+		
+		<section class="manufacture" id="manufacture">
+			<div class="manufacture__wrapper">
+				<div class="manufacture__description">
+					<h3 class="manufacture__title">Производство</h3>
+					<p class="manufacture__text">Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+					
+					<p class="manufacture__text">Досконально прорабатываем конструкции коробов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.</p>
+					
+					<p class="manufacture__text  manufacture__text--reset">Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+				</div>
+				
+				<div class="manufacture__slider slider">
+					<input class="slider__input" type="radio" name="slide-switch" id="slide-1">
+					<label class="slider__label" for="slide-1">
+						<img src="img/small-slide-1.png" alt="Слайд1">
+					</label>
+					<img src="img/slide-1.png" alt="Слайд1">
+					
+					<input class="slider__input" type="radio" name="slide-switch" id="slide-2">
+					<label class="slider__label" for="slide-2">
+						<img src="img/small-slide-2.png" alt="Слайд2">
+					</label>
+					<img src="img/slide-2.png" alt="Слайд2">
+					
+					<input class="slider__input" type="radio" name="slide-switch" id="slide-3" checked>
+					<label class="slider__label" for="slide-3">
+						<img src="img/small-slide-3.png" alt="Слайд3">
+					</label>
+					<img src="img/slide-3.png" alt="Слайд3">
+					
+					<input class="slider__input" type="radio" name="slide-switch" id="slide-4">
+					<label class="slider__label" for="slide-4">
+						<img src="img/small-slide-4.png" alt="Слайд4">
+					</label>
+					<img src="img/slide-4.png" alt="Слайд4">
+				</div>
+			</div>
+		</section>
+		
+		<section class="clients" id="clients">
+			<div class="clients__wrapper">
+				<h2 class="clients__title">Наши клиенты</h2>
+				<div class="clients__list">
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img1.jpg">
+
+								<img class="clients__image" src="img/clients-img1-mobile.png" alt="Лготип компании Восход">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img2.jpg">
+
+								<img class="clients__image" src="img/clients-img2-mobile.png" alt="Лготип компании Стерх">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img3.jpg">
+
+								<img class="clients__image" src="img/clients-img3-mobile.jpg" alt="Лготип компании Серебрянный Снег">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img4.jpg">
+
+								<img class="clients__image" src="img/clients-img4-mobile.jpg" alt="Лготип компании Авдон">
+							</picture>	
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img5.jpg">
+
+								<img class="clients__image" src="img/clients-img5-mobile.jpg" alt="Лготип компании Бройлеры">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img6.jpg">
+
+								<img class="clients__image" src="img/clients-img6.jpg" alt="Лготип компании Башкирсоке мороженное">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img7.jpg">
+
+								<img class="clients__image" src="img/clients-img7-mobile.jpg" alt="Лготип компании Аллат">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img8.jpg">
+
+								<img class="clients__image" src="img/clients-img8-mobile.jpg" alt="Лготип компании Альтернатива">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img9.jpg">
+
+								<img class="clients__image" src="img/clients-img9-mobile.jpg" alt="Лготип компании Индюшкин">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img10.jpg">
+
+								<img class="clients__image" src="img/clients-img10-mobile.png" alt="Лготип компании Салават Cтекло">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img11.jpg">
+
+								<img class="clients__image" src="img/clients-img11-mobile.jpg" alt="Лготип компании Молочный фермер">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="clients__item">
+						<a href="" class="clients__link">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/clients-img12.jpg">
+
+								<img class="clients__image" src="img/clients-img12-mobile.jpg" alt="Лготип компании Меги">
+							</picture>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact-us" id="contact-us">
+			<div class="contact-us__wrapper">
+				<h3 class="contact-us__title">Контакты</h3>
+				<p class="contact-us__info contact-us__info--location">
+					<b>Адрес офиса</b>
+					г. Уфа, Проспект октября, 46
+				</p>
+				
+				<p class="contact-us__info contact-us__info--location-stock">
+					<b>Адрес склада</b>
+					г. Уфа, ул. Майкопская, 65/2
+				</p>
+				
+				<p class="contact-us__info contact-us__info--phone-number">
+					<b>Тел. отдела продаж:</b>
+					<a class="contact-us__link contact-us__link--phone" href="8(347)2715428">
+						8 (347) 271-54-28
+					</a>
+					<a class="contact-us__link" href="8(937)3633000">
+						8 (937) 363-30-00
+					</a>
+				</p>
+				
+				<div class="contact-us__wrapper-button">
+					<a href="#" class="contact-us__button button button-request-call2">Заказать звонок</a>
+				</div>
+				
+				<p class="contact-us__info contact-us__info--email">
+					<b>Е-mail</b>
+					<a class="contact-us__email-link" href="mailto:urals.karton@gmail.com">
+						urals.karton@gmail.com
+					</a>
+				</p>
+			</div>
+			
+			<div class="contact-us__map">
+				<iframe class="contact-us__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2738.2024997029193!2d56.000149132989534!3d54.75280976832536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d939f2f1bd4371%3A0x33be391ed5fe1488!2z0L_RgNC-0YHQvy4g0J7QutGC0Y_QsdGA0Y8sIDQ2LCDQo9GE0LAsINCg0LXRgdC_LiDQkdCw0YjQutC-0YDRgtC-0YHRgtCw0L0sINCg0L7RgdGB0LjRjywgNDUwMDAw!5e0!3m2!1sru!2sua!4v1526074885961" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="page-footer">
+		<a href="#" class="page-footer__copyright-link">© www.gofra-ura.ru 2017, все права защищены</a>
+	</footer>
+	
+
+	<div class="modal-content">
+		<button class="modal-content__button-close" type="button" title="Закрыть">Закрыть</button>
+		
+		<div class="modal-content__wrapper">
+			<h3 class="modal-content__title">Заявка на консультацию менеджера</h3>
+			<p>Перезвоним в течение 5 минут</p>
+
+			<form class="modal-content__login-form" action="#" method="post">
+				<input class="modal-content__field" type="text" name="name" placeholder="Ваше имя" required>
+
+				<input class="modal-content__field" type="tel" name="contact-number" placeholder="Контактный телефон" required>
+
+				<button class="modal-content__button button">Получить консультацию</button> 
+			</form>
+		</div>
+	</div>
+	<div class="modal-overlay"></div>
+	
+
+ 
+	<div class="popup-hint">
+		<button class="popup-hint__button-close" type="button" title="Закрыть">Закрыть</button>
+		
+		<div class="popup-hint__wrapper">
+			<div class="popup-hint__heading">Гофрокороб 4-х клапанный</div>
+
+			<div class="popup-hint__content">
+				<div class="popup-hint__wrapper-image">
+					<img class="popup-hint__image" src="img/product-corrugated-box-mobile.jpg" alt="Гофрокороб 4-х клапанный">
+				</div>
+
+				<div class="popup-hint__wrapper-description">
+					<p class="popup-hint__description">
+						<b>Гофрокороб 4-х клапанный</b> - является самым распространённым и универсальным видом упаковки из гофрокартона, подходящим для хранения и транспортировки продукции. Гофрокороба такого типа бывают стандартными, без верхних клапанов, с перекрывающимися клапанами, короб в составе «крышка – дно». Короба подходят как для ручной сборки, так и для автоматических линий упаковки.
+					</p>
+					<p class="popup-hint__description">
+						При заказе данного вида коробов важно указывать основные параметры: длина (L) х ширина (В) х высота (H) внутренние размеры короба, указанные в миллиметрах.
+					</p>
+				</div>
+			</div>
+
+			<div class="popup-hint__feedback feedback feedback--order">
+			<p class="feedback__intro">
+				Получите индивидуальное предложение
+				<span>на производство и поставку изделий</span> 
+			</p>
+				
+			<form  class="feedback__form" action="#" method="post">
+				<input class="feedback__field" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+				<button class="feedback__button button" type="submit">Оставить заявку!</button>
+			</form>
+
+			<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+		</div>
+		</div>
+	</div>
+
+	
+	<div class="popup-hint  popup-hint--item-two">
+		<button class="popup-hint__button-close popup-hint__button-close--item-two" type="button" title="Закрыть">Закрыть</button>
+		
+		<div class="popup-hint__wrapper">
+			<div class="popup-hint__heading">Гофролоток</div>
+
+			<div class="popup-hint__content">
+				<div class="popup-hint__wrapper-image">
+					<img class="popup-hint__image" src="img/product-corrugated-sheath-mobile.jpg" alt="Гофролоток">
+				</div>
+
+				<div class="popup-hint__wrapper-description">
+					<p class="popup-hint__description">
+						<b>Гофролоток</b> - один самых распространённых видов самосборных коробов, который представляет собой поддон с небольшой высотой открытого типа, т.е. не имеющего крышки.
+					</p>
+					<p class="popup-hint__description">
+						Благодаря высокой прочности данной упаковки продукция в гофролотках выдерживает большие нагрузки при штабелировании и ее можно перевозить на большие расстояния без потерь товарного вида. Продукцию в гофролотке удобно представлять в торговом зале для конечного потребителя. Основное распространение получили гофролотки овощные, под птицу, под рыбу, под кондитерские изделия.
+					</p>
+				</div>
+			</div>
+
+			<div class="popup-hint__feedback feedback feedback--order">
+				<p class="feedback__intro">
+					Получите индивидуальное предложение
+					<span>на производство и поставку изделий</span> 
+				</p>
+
+				<form  class="feedback__form" action="#" method="post">
+					<input class="feedback__field" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+					<button class="feedback__button button" type="submit">Оставить заявку!</button>
+				</form>
+
+				<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="popup-hint popup-hint--item-three">
+		<button class="popup-hint__button-close popup-hint__button-close--item-three" type="button" title="Закрыть">Закрыть</button>
+		
+		<div class="popup-hint__wrapper">
+			<div class="popup-hint__heading">Гофрокороб самосборный<span>(сложная высечка)</span></div>
+
+			<div class="popup-hint__content">
+				<div class="popup-hint__wrapper-image">
+					<img class="popup-hint__image" src="img/product-corrugated-self-gathering-modile.jpg" alt="Гофрокороб самосборный (сложная высечка)">
+				</div>
+
+				<div class="popup-hint__wrapper-description">
+					<p class="popup-hint__description">
+						<b>Гофрокороб самосборный (сложная высечка)</b> - вид упаковки из гофрокартона, который представляет собой высеченный по чертежу гофролист. При сборке таких коробов нет необходимости применять дополнительные материалы (как клей, скотч, скобы), что удобно для открывания-закрывания гофрокороба без потери внешнего вида упаковки из картона. 
+					</p>
+					<p class="popup-hint__description">
+						Распространённые типы самосборных коробов – короб с крышкой на фиксаторах, лотки с отрытым верхом, короба типа «телевизор», гофроподдоны, короба по типу «крышка - дно», телескопические короба, короба оберточного типа. 
+					</p>
+				</div>
+			</div>
+
+			<div class="popup-hint__feedback feedback feedback--order">
+				<p class="feedback__intro">
+					Получите индивидуальное предложение
+					<span>на производство и поставку изделий</span> 
+				</p>
+
+				<form  class="feedback__form" action="#" method="post">
+					<input class="feedback__field" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+					<button class="feedback__button button" type="submit">Оставить заявку!</button>
+				</form>
+
+				<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="popup-hint popup-hint--item-four">
+		<button class="popup-hint__button-close popup-hint__button-close--item-four" type="button" title="Закрыть">Закрыть</button>
+		
+		<div class="popup-hint__wrapper">
+			<div class="popup-hint__heading">Листовой гофрокартон</div>
+
+			<div class="popup-hint__content">
+				<div class="popup-hint__wrapper-image">
+					<img class="popup-hint__image" src="img/product-corrugated-cardboard-mobile.jpg" alt="Листовой гофрокартон">
+				</div>
+
+				<div class="popup-hint__wrapper-description">
+					<p class="popup-hint__description">
+						<b>Листовой гофрокартон</b> - производство листового гофрокартона является основой производственного цикла в «Добрый картон», который в дальнейшем идет на переработку и выпуск изделий таких как гофрокороб, гофролоток, проктадка и т.д. 
+					</p>
+					<p class="popup-hint__description">
+						Мы предлагаем к продаже 3-х слойный листовой гофрокартон в листах марок Т21-Т27 профиль С (высота профиля 4 мм) бурого или белого цветов. 
+					</p>
+				</div>
+			</div>
+
+			<div class="popup-hint__feedback feedback feedback--order">
+				<p class="feedback__intro">
+					Получите индивидуальное предложение
+					<span>на производство и поставку изделий</span> 
+				</p>
+
+				<form  class="feedback__form" action="#" method="post">
+					<input class="feedback__field" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+					<button class="feedback__button button" type="submit">Оставить заявку!</button>
+				</form>
+
+				<small class="feedback__text"><sup>*</sup> Минимальный заказ 500шт</small>
+			</div>
+		</div>
+	</div>
+	
+<!--
+	<div class="close-hint">
+		<button class="close-hint__button" type="button" title="Закрыть">Закрыть</button>
+	</div>
+-->
+
+	
+	<script src="js/script.js"></script>
+</body>
+</html>

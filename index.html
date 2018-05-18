@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>My Portfolio</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	
+	<div style="display: none">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-email" viewbox="0 0 32 32">
+<path id="mail" d="M28,5H4C1.8,5,0,6.8,0,9v13c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V9C32,6.8,30.2,5,28,5z M2,10.3l7,5.3
+	l-7,5.3V10.3z M30,22c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2l7.8-5.9l4.4,3.3c0.5,0.4,1.2,0.6,1.8,0.6c0.6,0,1.3-0.2,1.8-0.6l4.4-3.3
+	L30,22L30,22z M30,20.8l-7-5.3l7-5.3V20.8z M17.2,18.6C16.8,18.9,16.4,19,16,19c-0.4,0-0.9-0.1-1.2-0.4l-4.1-3.1l-0.8-0.6L2,9v0
+	c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2L17.2,18.6z"></path>
+</symbol><symbol id="icon-facebook" viewbox="0 0 310 310">
+<g id="XMLID_834_">
+	<path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064   c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996   V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545   C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703   c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</symbol><symbol id="icon-phone" viewbox="0 0 24.8 24.3">
+<g>
+	<g id="UrwUhy_2_">
+		<g>
+			<path d="M17.3,24.3c-0.4,0-0.7,0-1.1,0c-4.9-0.6-8.5-2.9-11.1-5.8C2.5,15.6,0.4,11.9,0,6.8c0-0.5,0-0.9,0-1.4
+				c0.1-0.9,0.5-1.5,1.1-2.1c0.6-0.7,1.6-1.5,2.5-1.6c0.7,0,1.8,0.5,2.2,1.1c0.4,0.5,0.6,1.6,0.8,2.4C6.8,6.1,7.2,7.2,7.1,8
+				c-0.2,1.2-1.8,1.7-2.2,2.6c1.6,3.7,4.1,6.5,7.5,8.3c0.8-0.5,1.6-1.9,2.8-1.9c0.4,0,1,0.2,1.4,0.3c0.5,0.1,0.9,0.3,1.3,0.5
+				c0.7,0.3,2,0.6,2.4,1.2c0.4,0.6,0.7,1.6,0.6,2.2C20.6,22.5,18.5,23.9,17.3,24.3z"></path>
+		</g>
+	</g>
+	<path d="M12.5,1.5c5.9,0,10.8,4.8,10.8,10.8h1.5C24.8,5.5,19.3,0,12.5,0V1.5z"></path>
+	<path d="M12.5,9.3v1.6c0.8,0,1.4,0.6,1.4,1.4h1.6C15.5,10.7,14.2,9.3,12.5,9.3z"></path>
+	<path d="M12.5,6.2c3.3,0,6.1,2.7,6.1,6.1h1.6c0-4.2-3.4-7.6-7.6-7.6V6.2z"></path>
+</g>
+</symbol><symbol id="icon-skype" viewbox="0 0 24.08 24.08">
+<g>
+	<path d="M23.029,13.494c0.34,0.481,0.599,1.003,0.78,1.575c0.18,0.57,0.271,1.16,0.271,1.771c0,0.875-0.177,1.697-0.527,2.467   c-0.351,0.768-0.834,1.445-1.45,2.033c-0.616,0.582-1.333,1.039-2.157,1.371s-1.691,0.495-2.613,0.495   c-1.313,0-2.491-0.31-3.536-0.929c-0.29,0.04-0.582,0.069-0.877,0.091c-0.296,0.02-0.589,0.028-0.882,0.028   c-1.534,0-2.974-0.275-4.321-0.823c-1.344-0.551-2.521-1.299-3.535-2.252c-1.011-0.949-1.808-2.068-2.382-3.349   c-0.579-1.281-0.868-2.65-0.868-4.105c0-0.282,0.014-0.55,0.044-0.798c0.027-0.248,0.064-0.501,0.102-0.754   C0.358,9.316,0,8.243,0,7.092c0-0.856,0.177-1.665,0.528-2.426c0.35-0.76,0.83-1.421,1.446-1.982C2.59,2.122,3.311,1.68,4.13,1.356   c0.821-0.324,1.692-0.482,2.614-0.482c0.664,0,1.287,0.078,1.879,0.237c0.592,0.161,1.146,0.385,1.657,0.678   c0.289-0.041,0.585-0.07,0.877-0.093c0.296-0.018,0.592-0.029,0.881-0.029c1.539,0,2.984,0.268,4.335,0.801   c1.348,0.529,2.528,1.262,3.542,2.192c1.014,0.934,1.813,2.015,2.393,3.245c0.578,1.232,0.867,2.554,0.867,3.962   C23.176,12.386,23.128,12.929,23.029,13.494z M17.333,16.696c0.474-0.624,0.708-1.357,0.708-2.199c0-0.663-0.132-1.22-0.392-1.672   c-0.271-0.45-0.653-0.827-1.146-1.128c-0.453-0.292-1.042-0.551-1.763-0.783c-0.725-0.182-1.494-0.36-2.307-0.542l-0.891-0.203   c-0.239-0.051-0.429-0.094-0.572-0.133c-0.159-0.039-0.306-0.082-0.446-0.133c-0.132-0.047-0.272-0.102-0.412-0.162   C9.84,9.627,9.612,9.472,9.431,9.29c-0.14-0.157-0.21-0.368-0.21-0.63c0-0.383,0.228-0.725,0.681-1.028   c0.513-0.283,1.14-0.419,1.885-0.41c0.861,0,1.466,0.127,1.807,0.382c0.412,0.302,0.735,0.674,0.966,1.113   c0.201,0.322,0.405,0.562,0.616,0.72c0.201,0.154,0.48,0.237,0.831,0.248c0.395,0,0.722-0.131,0.997-0.395   c0.269-0.246,0.398-0.523,0.391-0.835c0-0.361-0.102-0.716-0.302-1.058c-0.198-0.321-0.531-0.663-0.99-1.026   c-0.232-0.156-0.487-0.299-0.762-0.43c-0.276-0.132-0.586-0.248-0.923-0.346c-0.353-0.096-0.724-0.17-1.115-0.22   c-0.392-0.049-0.82-0.072-1.294-0.072c-1.194,0-2.201,0.146-3.021,0.438c-0.881,0.304-1.548,0.722-2,1.264   C6.536,7.521,6.31,8.141,6.31,8.865c0,0.762,0.219,1.382,0.651,1.86c0.435,0.517,1.024,0.908,1.769,1.173   c0.708,0.283,1.613,0.531,2.723,0.745c0.415,0.098,0.778,0.181,1.099,0.244c0.316,0.062,0.603,0.133,0.854,0.21   c0.473,0.129,0.857,0.345,1.15,0.652c0.313,0.266,0.47,0.608,0.47,1.03c0,0.583-0.286,1.055-0.851,1.415   c-0.534,0.369-1.256,0.551-2.165,0.538c-0.728,0-1.255-0.084-1.589-0.254c-0.415-0.189-0.721-0.429-0.922-0.715   c-0.255-0.326-0.459-0.688-0.623-1.079c-0.143-0.371-0.336-0.651-0.588-0.84c-0.235-0.191-0.51-0.286-0.833-0.286   c-0.412,0-0.752,0.115-1.021,0.341c-0.269,0.257-0.398,0.558-0.392,0.896c0,0.589,0.218,1.178,0.65,1.768   c0.429,0.607,0.98,1.081,1.651,1.422c0.983,0.508,2.218,0.765,3.702,0.775c1.211,0,2.29-0.18,3.229-0.539   C16.196,17.812,16.884,17.305,17.333,16.696z"></path>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</symbol><symbol id="icon-telegram" viewbox="0 0 300 300">
+<g id="XMLID_496_">
+	<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</symbol></svg>
+	</div>
+
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="main-nav__toggle-bar"></span>
+				<span class="main-nav__toggle-bar"></span>
+				<span class="main-nav__toggle-bar"></span>
+			</button>
+			
+			
+			<ul class="main-nav__list">
+				<li class="main-nav__item">
+					<a href="#introduction" class="main-nav__link  main-nav__link--active">Главная</a>
+				</li>
+				
+				<li class="main-nav__item">
+					<a href="#works" class="main-nav__link">Мои работы</a>
+				</li>
+				
+				<li class="main-nav__item">
+					<a href="#info" class="main-nav__link">Обо мне</a>
+				</li>
+		
+				<li class="main-nav__item">
+					<a href="#page-footer" class="main-nav__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	
+	<section class="introduction" id="introduction">
+		<div class="introduction__wrapper">
+			<h1 class="introduction__title">Верстка сайтов<br>
+			<span>HTML &amp; CSS</span></h1>
+			<p class="introduction__description">Привет, я Кошевая Юля</p>
+		</div>
+	</section>
+
+	<section class="works" id="works">
+		<div class="works__wrapper">
+			<h2 class="works__title">Мои работы</h2>
+			
+			<div class="works__list">
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/mishka.jpg" alt="Проект Mishka">
+
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Mishka</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project-mishka/build/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/eventide.jpg" alt="Проект Eventide">
+
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Eventide</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project-eventide/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+				
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/good-cardboard.jpg" alt="Проект Добрый Картон">
+
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Добрый Картон</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project-good-cardboard/build/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+				
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/sedona.jpg" alt="Проект Sedona">
+
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Sedona</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project_sedona/build/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+				
+
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/auto-loan.jpg" alt="Проект Автозайм">
+						
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Автозайм</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project-auto-loan/build/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="works__item">
+					<figure class="works__effect">
+						<img class="works__image" src="img/styletour.jpg" alt="Проект Styletour">
+
+						<figcaption class="works__description">
+							<h3 class="works__heading">Project&#8194;<span>Styletour</span></h3>
+
+							<p class="works__text">Explore</p>
+
+							<a href="projects/project-styletour/index.html" class="works__item-link">Подробнее</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	<section class="info" id="info">
+		<div class="info__wrapper">
+			<h2 class="info__title">Обо мне</h2>
+			<p class="info__description  info__description--indent">
+				Привет, я Кошевая Юля. Занимаюсь адаптивной версткой сайтов с использованием современных технологий: HTML5, CSS3, Less, Gulp, компонентный подход на базе БЭМ, SVG, оптимизация графики, спрайты. Весь код проходит валидацию по стандартам W3C.
+			</p>
+			<p class="info__description">
+				Буду рада сотрудничеству с вами.
+			</p>
+		</div>
+	</section>
+
+	
+	<footer class="page-footer" id="page-footer">
+		<div class="page-footer__circle"></div>
+		<div class="page-footer__circle"></div>
+		<div class="page-footer__circle"></div>
+		<div class="page-footer__circle"></div>
+		
+		<div class="page-footer__wrapper">
+			<p class="page-footer__contacts">
+				<a class="page-footer__contacts-link" href="tel:+380936477055">
+					<svg class="page-footer__contacts-icon" width="21" height="18">
+						<use xlink:href="#icon-phone"></use>
+					</svg>
+					
+					tel: +38 (093) 64 77 055
+				</a>
+				
+				<a class="page-footer__contacts-link" href="mailto:kochevaya16@gmail.com">
+					<svg class="page-footer__contacts-icon" width="21" height="21">
+						<use xlink:href="#icon-email"></use>
+					</svg>
+					
+					kochevaya16@gmail.com
+				</a>
+			</p>
+			
+			<p class="page-footer__social">
+				<a href="skype:live:ec6650fd5596b759?chat" class="page-footer__social-link">
+					<span class="visually-hidden">Skype</span>
+
+					<svg class="page-footer__social-icon" width="23" height="23">
+						<use xlink:href="#icon-skype"></use>
+					</svg>
+				</a>
+				
+				<a href="https://t.me/Kosheva_Yulya" class="page-footer__social-link">
+					<span class="visually-hidden">Telegram</span>
+
+					<svg class="page-footer__social-icon" width="22" height="23">
+						<use xlink:href="#icon-telegram"></use>
+					</svg>
+				</a>
+			</p>
+		</div>
+	</footer>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
