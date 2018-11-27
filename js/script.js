@@ -1,55 +1,124 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-		
-	navMain.classList.remove('main-nav--nojs');
 
-	navToggle.addEventListener('click', function() {
-		if(navMain.classList.contains('main-nav--closed')) {
-			navMain.classList.remove('main-nav--closed');
-			navMain.classList.add('main-nav--opened');
-			
-			
-			
-		} else {
-			navMain.classList.add('main-nav--closed');
-			navMain.classList.remove('main-nav--opened');
-			
-			
-			
-			
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+	if (navMain.classList.contains('main-nav--closed')) {
+		navMain.classList.remove('main-nav--closed');
+		navMain.classList.add('main-nav--opened');
+
+
+
+	} else {
+		navMain.classList.add('main-nav--closed');
+		navMain.classList.remove('main-nav--opened');
+
+
+
+
+	}
+});
+
+
+/* ---  TYPING TEXT  ---*/
+
+// get the element
+const text = document.querySelector('.info__message');
+
+// make a words array
+const words = [
+  "Буду рада сотрудничеству с вами!",
+  "Буду рада сотрудничеству с вами!"
+];
+
+// start typing effect
+setTyper(text, words);
+
+function setTyper(element, words) {
+
+	const LETTER_TYPE_DELAY = 75;
+	//  const WORD_STAY_DELAY = 2000;
+	const WORD_STAY_DELAY = 5000;
+
+	const DIRECTION_FORWARDS = 0;
+	const DIRECTION_BACKWARDS = 1;
+
+	var direction = DIRECTION_FORWARDS;
+	var wordIndex = 0;
+	var letterIndex = 0;
+
+	var wordTypeInterval;
+
+	startTyping();
+
+	function startTyping() {
+		wordTypeInterval = setInterval(typeLetter, LETTER_TYPE_DELAY);
+	}
+
+	function typeLetter() {
+		const word = words[wordIndex];
+
+		if (direction == DIRECTION_FORWARDS) {
+			letterIndex++;
+
+			if (letterIndex == word.length) {
+				direction = DIRECTION_BACKWARDS;
+				clearInterval(wordTypeInterval);
+				setTimeout(startTyping, WORD_STAY_DELAY);
+			}
+
+		} else if (direction == DIRECTION_BACKWARDS) {
+			letterIndex--;
+
+			if (letterIndex == 0) {
+				nextWord();
+			}
 		}
-	});
 
+		const textToType = word.substring(0, letterIndex);
 
-function debounce(func, wait = 20, immediate = true) {
-      var timeout;
-      return function() {
-        var context = this, args = arguments;
-        var later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    }
+		element.textContent = textToType;
+	}
 
+	function nextWord() {
 
-    const header = document.querySelectorAll('.page-header');
-	const introd = document.querySelector('#introduction');
+		letterIndex = 0;
+		direction = DIRECTION_FORWARDS;
+		wordIndex++;
 
-    function scrollFunc(){
-
-		const slideInAt = (window.scrollY) > introd.offsetHeight - header[0].offsetHeight;
-
-		if ( slideInAt){
-			header[0].classList.add('active');
-		} else {
-			header[0].classList.remove('active');
+		if (wordIndex == words.length) {
+			wordIndex = 0;
 		}
 
-    }
+	}
+}
 
-    window.addEventListener('scroll', debounce(scrollFunc));
+
+/* -- animated floating menu -- */
+
+$(document).on("scroll", function () {
+	if ($(document).scrollTop() > 50) {
+		$("header").removeClass("large").addClass("small");
+	} else {
+		$("header").removeClass("small").addClass("large");
+	}
+});
+
+
+/* -- Плавная прокрутка к якорю без jQuery -- */
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href')
+    
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
